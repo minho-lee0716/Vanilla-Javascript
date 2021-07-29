@@ -123,3 +123,32 @@ if (team === 'madrid') {
 // 9. Ternary operator: ?
 // condition ? value1 : value2;
 console.log(team === 'madrid' ? 'yes' : 'no');
+
+// 10. Switch statement
+// use for multiple if checks
+// use for enum-like value check
+// use for multiple type checks in TS
+
+const browser = 'Safari';
+switch (browser) {
+	case 'IE':
+		console.log('go away!');
+		break;
+	
+	// case 'Chrome':
+	// 	console.log('I love you!');
+	// 	break;
+
+	// case 'Firefox':
+	// 	console.log('I love you!');
+	// 	break;
+
+	case 'Chrome':
+	case 'Firefox':
+		console.log('I love you!');
+		break;
+	
+	default:
+		console.log('same all!');
+		break;
+}
