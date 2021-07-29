@@ -97,3 +97,14 @@ console.log(`value: ${nothing}, type: ${typeof nothing}`);
 // let x; 는 let x = undefined; 와 같다.
 let x;
 console.log(`value: ${x}, type: ${typeof x}`);
+
+// symbol, create unique identifiers for objects
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id');
+console.log(symbol1 === symbol2); // false
+
+const gSymbol1 = Symbol.for('id');
+const gSymbol2 = Symbol.for('id');
+console.log(gSymbol1 === gSymbol2); // true
+
+console.log(`value: ${gSymbol1.description}, type: ${typeof gSymbol1}`);
