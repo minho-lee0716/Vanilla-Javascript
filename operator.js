@@ -33,3 +33,11 @@ console.log(`preDecrement: ${preDecrement}, counter: ${counter}`); // 3 3
 
 const postDecrement = counter--;
 console.log(`postDecrement: ${postDecrement}, counter: ${counter}`); // 3 2
+
+// 4. Assignment operators
+let x = 3;
+let y = 6;
+x += y; // x = x + y;
+x -= y;
+x += y;
+x /= y;
