@@ -3,10 +3,10 @@
 // use this for Vanilla Javascript.
 'use strict';
 
-// console.log('hello world');
+console.log('hello world');
 
-// let a;
-// a = 6;
+let a;
+a = 6;
 
 // 2. Variable
 // let (added in ES6)
@@ -20,8 +20,8 @@ let globalName = 'global name';
 	console.log(globalName);
 }
 
-// console.log(name);
-// console.log(globalName);
+console.log(name);
+console.log(globalName);
 
 // var (don't ever use this!)
 // var hoisting (move declaration from bottom to top)
@@ -71,3 +71,12 @@ console.log(nAn);
 const bigInt  = 1234567890123456789012345678901234567890n; // over (-2 * 53) ~ (2 * 53)
 console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
 Number.MAX_SAFE_INTEGER
+
+// string
+const char = 'c';
+const brendan = 'brendan';
+const greeting = 'hello ' + brendan;
+console.log(`value: ${greeting}, type: ${typeof greeting}`);
+
+const helloBob = `hi ${brendan}!`; // template literals (string)
+console.log(`value: ${helloBob}, type: ${typeof helloBob}`);
