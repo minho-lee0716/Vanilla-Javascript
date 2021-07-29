@@ -107,3 +107,19 @@ console.log('' == false); // true
 console.log('' === false); // false
 console.log(null == undefined); // true
 console.log(null === undefined); // false
+
+// 8. Conditional operators: if
+// if, else if, else
+
+const team = 'madrid';
+if (team === 'madrid') {
+	console.log('You\'re Madrid!');
+} else if (team === 'barca') {
+	console.log('You\'re Barcelona!');
+} else {
+	console.log('You\'re Tottenham');
+}
+
+// 9. Ternary operator: ?
+// condition ? value1 : value2;
+console.log(team === 'madrid' ? 'yes' : 'no');
