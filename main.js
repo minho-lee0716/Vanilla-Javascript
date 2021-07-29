@@ -45,3 +45,29 @@ console.log(age);
 
 const daysInWeek = 7;
 const maxNumber = 5;
+
+// 4. Variable types(어떤 프로그래밍 언어든, primitive 타입과 object 타입으로 나뉘어 있음.)
+// primitive, single item: number, string, boolean, null, undefined, symbol
+// object, box container
+// function, first-class function
+
+const count = 17; // integer
+const size = 17.1; // decimal number
+
+console.log(`value: ${count}, type: ${typeof count}`);
+console.log(`value: ${size}, type: ${typeof size}`);
+
+// number - special numeric values: infinity, -infinity. NaN
+const infinity = 1 / 0;
+const negativeInfinity = -1 / 0;
+const nAn = 'not a number' / 2;
+
+console.log(infinity);
+console.log(negativeInfinity);
+console.log(nAn);
+
+// bigInt (fairly new, don't use it yet)
+// 숫자 끝에 n만 붙이면 됨, 하지만 크롬이랑 파이어폭스에서만 지원을 하기에 아직은 사용X
+const bigInt  = 1234567890123456789012345678901234567890n; // over (-2 * 53) ~ (2 * 53)
+console.log(`value: ${bigInt}, type: ${typeof bigInt}`);
+Number.MAX_SAFE_INTEGER
