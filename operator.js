@@ -7,3 +7,11 @@ console.log(`string literals:
 '''`);
 
 console.log('minho\'s \nbo\tok');
+
+// 2. Numeric operators
+console.log(1 + 1); // add
+console.log(1 - 1); // substract
+console.log(1 / 1); // divide
+console.log(1 * 1); // multiply
+console.log(1 % 1); // remainder
+console.log(1 ** 1); // exponentiation
