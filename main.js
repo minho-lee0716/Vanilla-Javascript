@@ -20,8 +20,8 @@ let globalName = 'global name';
 	console.log(globalName);
 }
 
-console.log(name);
-console.log(globalName);
+// console.log(name);
+// console.log(globalName);
 
 // var (don't ever use this!)
 // var hoisting (move declaration from bottom to top)
@@ -33,3 +33,15 @@ console.log(globalName);
 }
 
 console.log(age);
+
+// 3. Contants
+// favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// - reduce human mistakes
+
+// Mutable(바뀔 수 있는 값) >> let
+// Immutable(바뀔 수 없는 값) >> const
+
+const daysInWeek = 7;
+const maxNumber = 5;
