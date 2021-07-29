@@ -8,7 +8,7 @@ console.log('hello world');
 let a;
 a = 6;
 
-// 2. Variable
+// 2. Variable rw(read/write)
 // let (added in ES6)
 
 let globalName = 'global name';
@@ -34,17 +34,23 @@ console.log(globalName);
 
 console.log(age);
 
-// 3. Contants
-// favor immutable data type always for a few reasons:
-// - security
-// - thread safety
-// - reduce human mistakes
+// 3. Contant, r(read only)
+// use const whenever possible.
+// only use let if variaable needs to change.
 
 // Mutable(바뀔 수 있는 값) >> let
 // Immutable(바뀔 수 없는 값) >> const
 
 const daysInWeek = 7;
 const maxNumber = 5;
+
+// Note!
+// Immutable data types: premitive types, frozen objects (i.e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+// favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// - reduce human mistakes
 
 // 4. Variable types(어떤 프로그래밍 언어든, primitive 타입과 object 타입으로 나뉘어 있음.)
 // primitive, single item: number, string, boolean, null, undefined, symbol
