@@ -61,9 +61,9 @@ console.log(`and: ${value1 && value2 && check()}`);
 // often used to compress long if-statement
 // nullableObject && nullableObject.somthing
 
-if (nullableObject != null) {
-	console.log('test');
-}
+// if (nullableObject != null) {
+// 	console.log('test');
+// }
 
 function check() {
 	for (let i=0; i<10; i++) {
@@ -72,3 +72,38 @@ function check() {
 	}
 	return true;
 }
+
+// ! (not)
+console.log(!value1);
+
+// 7. Equality
+const stringFive = '5';
+const numberFive = 5;
+
+console.log('Equality Test');
+
+// == loose equality, with type conversion
+console.log(stringFive == numberFive);
+console.log(stringFive != numberFive);
+
+// === strict equality, no type conversion
+console.log(stringFive === numberFive);
+console.log(stringFive !== numberFive);
+
+// object equality by reference
+const laliga1 = {team: 'madrid'};
+const laliga2 = {team: 'madrid'};
+const laliga3 = laliga1;
+
+console.log(laliga1 == laliga2); // false
+console.log(laliga1 === laliga2); // false
+console.log(laliga1 === laliga3); // true
+
+// equality - puzzler
+console.log('Equaliry - Puzzler Test');
+console.log(0 == false); // true
+console.log(0 === false); // false
+console.log('' == false); // true
+console.log('' === false); // false
+console.log(null == undefined); // true
+console.log(null === undefined); // false
