@@ -55,3 +55,12 @@ function printAll(...args) {
     args.forEach((arg) => console.log(arg));
 }
 printAll('dream', 'coding', 'ellie');
+
+// 5. Local scope
+let globalMessage = 'global'; // global variable
+function printMessage() {
+    let message = 'hello';
+    console.log(message); // local variable
+    console.log(globalMessage);
+}
+printMessage();
