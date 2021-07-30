@@ -71,3 +71,19 @@ function sum(a, b) {
 }
 const result = sum(1, 2); // 3
 console.log(`sum: ${sum(1, 2)}`);
+
+// 7. Early return, early exit
+// bad
+function upgradeUser(user) {
+    if (user.point > 10) {
+        // long upgrade logic...
+    }
+}
+
+// good
+function upgradeUser(user) {
+    if (user.point <= 10) {
+        return;
+    }
+    // long upgrade logic...
+}
