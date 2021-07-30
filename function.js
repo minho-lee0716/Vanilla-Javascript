@@ -142,3 +142,8 @@ const simpleMultiply = (a, b) => {
     // do something more
     return a * b;
 }
+
+// IIFE: Immediately Invoked Function Expression
+(function hello() {
+    console.log('IIFE');
+})();
