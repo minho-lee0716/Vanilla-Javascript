@@ -32,3 +32,12 @@ const ellie = { name: 'ellie' };
 // console.log(ellie);
 changeName(ellie);
 console.log(ellie);
+
+// 3. Default parameters (added in ES6)
+function showMessage(message, from = 'unknown') {
+    // if (from === undefined) {
+    //     from = 'unknown'
+    // }
+    console.log(`${message} by ${from}`);
+}
+showMessage('Hi!');
