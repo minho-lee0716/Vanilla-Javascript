@@ -101,7 +101,7 @@ class Rectangle extends Shape {}
 class Triangle extends Shape {
     draw() {
         super.draw();
-        console.log('🔺');
+        console.log('triangle');
     }
     getArea() {
         return (this.width * this.height) / 2;
